@@ -26,6 +26,18 @@ SERVICE_BLACKLIST = [
     'managedblockchain',  # TODO: Unclear, does not have a region
     'mediastore-data',  # Mediastore Container-specific endpoint required
     's3control',  # TODO: Account-ID specific endpoint required
+    # TODO support for new services
+    'appflow',
+    'braket',
+    'codeartifact',
+    'honeycode',
+    'identitystore',
+    'iotsitewise',
+    'ivs',
+    'macie2',
+    'redshift-data',
+    'sso-admin',
+    'synthetics',
 ]
 
 DEPRECATED_OR_DISALLOWED = {
@@ -164,6 +176,7 @@ NOT_RESOURCE_DESCRIPTIONS = {
     'ecs': ['DescribeClusters'],  # This gives duplicates from ListClusters, and also includes deleted clusters
     'elasticache': ['DescribeReservedCacheNodesOfferings'],
     'elasticbeanstalk': ['DescribeAccountAttributes', 'DescribeEvents'],
+    'elastic-inference': ['DescribeAcceleratorTypes', 'DescribeAcceleratorTypes'],
     'elb': ['DescribeAccountLimits'],
     'elbv2': ['DescribeAccountLimits'],
     'es': ['ListElasticsearchVersions'],
